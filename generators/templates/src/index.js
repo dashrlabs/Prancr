@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom';
 import Widget from './components/CoreWidget';
 
 const fakeSettings = {
-  get: (key) => {
+  get: (key, def) => {
+    if (!key) return def;
     const value = localStorage.getItem(key);
-    if (!key) return null;
+    if (!value) return def;
     try {
-      return JSON.parse(value);
+      return JSON.parse(value) || def;
     } catch (e) {
-      return null;
+      return def;
     }
   },
   set: (key, value) => {
