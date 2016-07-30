@@ -50,6 +50,8 @@ export default class Settings extends React.Component {
 
   render() {
     return (<this.props.app
+      width={2}
+      height={2}
       settings={this.getProto()}
     />);
   }
