@@ -1,7 +1,7 @@
 /** Do not rename this file **/
 import React from 'react';
 
-export default class <$= safeName %>Widget extends React.Component {
+export default class <%= safeName %>Widget extends React.Component {
   static propTypes = {
     width: React.PropTypes.number,
     height: React.PropTypes.number,
