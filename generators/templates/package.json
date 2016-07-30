@@ -1,9 +1,9 @@
 {
-  "name": "hack-widget-<%= safe %>",
+  "name": "dashr-widget-<%= safe %>",
   "productName": "<%= name %>",
   "version": "0.0.0",
   "description": "<%= description %>",
-  "main": "dist/index.js",
+  "main": "build/components/CoreWidget.js",
   "scripts": {
     "build": "gulp build",
     "lint": "eslint src",
