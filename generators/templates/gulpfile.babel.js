@@ -38,10 +38,17 @@ gulp.task('less', () =>
     .pipe(less())
     .pipe(concat('widget.css'))
     .pipe(gulp.dest('./dist'))
+    .pipe(browserSync.stream())
 );
 
 gulp.task('uikit-css', () =>
   gulp.src('./node_modules/uikit/dist/css/*.css')
+    .pipe(gulp.dest('./dist'))
+);
+
+gulp.task('uikit-css-advanced', () =>
+  gulp.src('./node_modules/uikit/dist/css/components/*.almost-flat.min.css')
+    .pipe(concat('advanced.css'))
     .pipe(gulp.dest('./dist'))
 );
 
@@ -60,7 +67,7 @@ gulp.task('uikit-js', () =>
     .pipe(gulp.dest('./dist'))
 );
 
-gulp.task('uikit', ['uikit-css', 'uikit-fonts', 'uikit-jquery', 'uikit-js']);
+gulp.task('uikit', ['uikit-css', 'uikit-css-advanced', 'uikit-fonts', 'uikit-jquery', 'uikit-js']);
 
 gulp.task('build', ['uikit', 'html', 'browserify', 'less']);
 
