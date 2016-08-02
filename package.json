@@ -1,7 +1,7 @@
 {
-  "name": "generator-hack-widget",
+  "name": "generator-prancr",
   "version": "1.0.0",
-  "description": "Magical widget generator",
+  "description": "A simple generator to make new dashr widgets",
   "homepage": "",
   "author": {
     "name": "Samuel Attard",
@@ -41,10 +41,10 @@
       "mocha": true
     }
   },
-  "repository": "MarshallOfSound/generator-mos",
+  "repository": "dashrlabs/prancr",
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "test": "eslint test gulpfile.js"
   },
   "license": "MIT"
 }

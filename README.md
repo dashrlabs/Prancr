@@ -1,5 +1,7 @@
-# generator-mos [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> My magical Generators
+# Prancr
+> A simple generator to make new dashr widgets
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 ## Installation
 
@@ -7,18 +9,25 @@ First, install [Yeoman](http://yeoman.io) and generator-mos using [npm](https://
 
 ```bash
 npm install -g yo
-npm install -g generator-mos
+npm install -g generator-prancr
 ```
 
 Then generate your new project:
 
 ```bash
-yo mos
+yo prancr
 ```
 
-The generator has multiple project types.  You will be able to choose from
+## What it makes
 
-* `ES6 Module`
+It sets you up with a brand new development environment for dashr widgets. Simply run
+
+```bash
+npm start
+```
+
+And your code will be compiled and run in your browser in a 2x2 container with automatic
+watcher scripts recompiling your code and reloading your browser.
 
 ## Getting To Know Yeoman
 
@@ -32,9 +41,9 @@ The generator has multiple project types.  You will be able to choose from
 MIT © [Samuel Attard](https://www.samuelattard.com)
 
 
-[npm-image]: https://badge.fury.io/js/generator-mos.svg?
-[npm-url]: https://npmjs.org/package/generator-mos
-[travis-image]: https://travis-ci.org/MarshallOfSound/Generator-MoS.svg?branch=master
-[travis-url]: https://travis-ci.org/MarshallOfSound/Generator-MoS
-[daviddm-image]: https://david-dm.org/MarshallOfSound/Generator-MoS.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/MarshallOfSound/Generator-MoS
+[npm-image]: https://badge.fury.io/js/generator-prancr.svg?
+[npm-url]: https://npmjs.org/package/generator-prancr
+[travis-image]: https://travis-ci.org/dashrlabs/generator-prancr.svg?branch=master
+[travis-url]: https://travis-ci.org/dashrlabs/generator-prancr
+[daviddm-image]: https://david-dm.org/dashrlabs/generator-prancr.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/dashrlabs/generator-prancr
