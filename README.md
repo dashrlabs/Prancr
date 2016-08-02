@@ -43,7 +43,7 @@ MIT © [Samuel Attard](https://www.samuelattard.com)
 
 [npm-image]: https://badge.fury.io/js/generator-prancr.svg?
 [npm-url]: https://npmjs.org/package/generator-prancr
-[travis-image]: https://travis-ci.org/dashrlabs/generator-prancr.svg?branch=master
-[travis-url]: https://travis-ci.org/dashrlabs/generator-prancr
-[daviddm-image]: https://david-dm.org/dashrlabs/generator-prancr.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/dashrlabs/generator-prancr
+[travis-image]: https://travis-ci.org/dashrlabs/prancr.svg?branch=master
+[travis-url]: https://travis-ci.org/dashrlabs/prancr
+[daviddm-image]: https://david-dm.org/dashrlabs/prancr.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/dashrlabs/prancr
