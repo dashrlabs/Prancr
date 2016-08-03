@@ -8,8 +8,8 @@ export default class <%= safeName %>Widget extends React.Component {
     settings: React.PropTypes.object.isRequired,
   };
 
-  static id = '<%= safeName %>';
-  static widgetName = 'your-widget-name';
+  static id = '<%= safe %>';
+  static widgetName = '<%= name %>';
   static sizes = [[2, 2]];
 
   render() {

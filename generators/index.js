@@ -34,7 +34,8 @@ module.exports = yeoman.Base.extend({
         this.props.year = (new Date()).getFullYear();
         this.props.class = 'widget-' + Date.now();
         this.props.safe = props.name.replace(/ /g, '-');
-        this.props.safeName = props.name.replace(/ /g, '');
+        const name = (props.name || 'My New Widget').replace(/ /g, '');
+        this.props.safeName = name[0].toUpperCase() + name.slice(1);
       });
   },
 
