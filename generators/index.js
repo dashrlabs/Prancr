@@ -13,17 +13,17 @@ module.exports = yeoman.Base.extend({
       {
         type: 'input',
         name: 'name',
-        message: 'What is the name of this widget?'
+        message: 'What is the name of this widget?:'
       },
       {
         type: 'input',
         name: 'description',
-        message: 'Give us a brief description of the widget'
+        message: 'Give us a brief description of the widget:'
       },
       {
         type: 'input',
         name: 'author',
-        message: 'What is your name?'
+        message: 'What is your name?:'
       }
     ];
 
@@ -34,7 +34,7 @@ module.exports = yeoman.Base.extend({
         this.props.year = (new Date()).getFullYear();
         this.props.class = 'widget-' + Date.now();
         this.props.safe = props.name.replace(/ /g, '-');
-        this.props.safeName = props.name.replace(/ /g, '-');
+        this.props.safeName = props.name.replace(/ /g, '');
       });
   },
 
